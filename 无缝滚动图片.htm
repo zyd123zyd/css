@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滚动吧，图片</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		list-style: none;
+	}
+	nav {
+		width: 900px;
+		height: 100px;
+		border: 1px solid #000;
+		margin: 100px auto;
+		overflow: hidden;
+	}
+	nav li {
+		float: left;
+	}
+	nav ul {
+	    width: 200%;
+		animation: moving 5s linear infinite;/*linear代表匀速行走*/
+	}
+	@keyframes moving {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-900px);
+		}
+	}
+	nav:hover ul {
+		animation-play-state: paused;/*鼠标经过便暂停动画*/
+	}
+	</style>
+</head>
+<body>
+	<nav>
+	<ul>
+		<li><img src="chuqiao/1.jpg" width="150px" height="100px"></li>
+		<li><img src="chuqiao/2.jpg" width="150px" height="100px"></li>
+		<li><img src="chuqiao/3.jpg" width="150px" height="100px"></li>
+		<li><img src="chuqiao/4.jpg" width="150px" height="100px"></li>
+		<li><img src="chuqiao/5.jpg" width="150px" height="100px"></li>
+		<li><img src="chuqiao/6.jpg" width="150px" height="100px"></li>
+		
+		<li><img src="chuqiao/1.jpg" width="150px" height="100px"></li>
+		<li><img src="chuqiao/2.jpg" width="150px" height="100px"></li>
+		<li><img src="chuqiao/3.jpg" width="150px" height="100px"></li>
+		<li><img src="chuqiao/4.jpg" width="150px" height="100px"></li>
+		<li><img src="chuqiao/5.jpg" width="150px" height="100px"></li>
+		<li><img src="chuqiao/6.jpg" width="150px" height="100px"></li>
+	</ul>
+	</nav>
+</body>
+</html>

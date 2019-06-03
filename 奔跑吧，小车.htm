@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>running car！</title>
+	<style>
+	div {
+		width: 150px;
+		height: 100px;
+		line-height: 100px;
+		background-color: hotpink;
+		animation: car 10s infinite;
+	}
+	@keyframes car {
+		0% {
+			transform: translate3d(0,0,0);
+		}
+		50% {
+			transform: translate3d(1000px,0,0);
+		}
+		51% {
+			transform: translate3d(1000px,0,0) rotateY(180deg);
+		}
+		99% {
+			transform: translate3d(0,0,0) rotateY(180deg);
+		}
+		100% {
+			transform: translate3d(0,0,0);
+		}
+	}
+	</style>
+</head>
+<body>
+	<div>我是玛莎拉蒂</div>
+</body>
+</html>

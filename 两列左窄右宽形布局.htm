@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两列左窄右宽型布局</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.top,
+	.banner,
+	.main,
+	.footer {
+		width: 960px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		border: 1px dashed #ccc;
+		text-align: center;
+	}
+	.top {
+		height: 80px;
+		background-color: pink;
+	}
+	.banner {
+		height: 100px;
+		background-color: orange;
+	}
+	.main {
+		height: 500px;
+	}
+	.main .left {
+		width: 400px;
+		height: 500px;
+		float: left;
+		background-color: pink;
+	}
+	.main .right {
+		width: 550px;
+		height: 500px;
+		float: left;
+		background-color: hotpink;
+		margin-left: 10px;
+	}
+	.footer {
+		height: 100px;
+		background-color: black;
+	}
+	</style>
+</head>
+<body>
+	<div class="top">top</div>
+	<div class="banner">banner</div>
+	<div class="main">
+		<div class="left">left</div>
+		<div class="right">right</div>
+	</div>
+	<div class="footer">footer</div>
+</body>
+</html>

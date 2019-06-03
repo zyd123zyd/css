@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xiecheng</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		list-style: none;
+	}
+	body {
+		min-width: 320px;
+		max-width: 540px;
+		margin: 0 auto;
+	}
+	header {
+		width: 100%;
+		height: 259px;
+		position: relative;
+		perspective: 1000px;
+	}
+	header img {
+		width: 100%;
+		height: 100%;
+	}
+	nav {
+		padding: 2px;
+	}
+	.row{
+		height: 66.19px;
+		width: 100%;
+		display: flex;
+	}
+	.row1 {
+		flex: 1;
+		border: 1px solid #fff;
+		line-height: 66.19px;
+		font-family: "micosoft yahei";
+		color: #fff;
+		text-shadow: 2px 1px rgba(255,255,255,.1);
+	}
+    .hotel {
+    	background-color: #FA6454;
+    	border-radius: 5px 0 0 0;
+    }
+    .homestay {
+    	background-color: #FB7752;
+    }
+    .onekey {
+    	background-color: #FFC04B;
+    	border-radius: 0 5px 0 0;
+    }
+    .air,
+    .train,
+    .car{
+    	background-color: #4EA0ED;
+    	border-radius: 0;
+    }
+    .trip,
+    .highspeed,
+    .ship {
+    	background-color: #3BC49E;
+    }
+    .trip {
+    	border-radius: 0 0 0 5px;
+    }
+    .highspeed {
+    	border-radius: 0;
+    }
+    .ship {
+    	border-radius: 0 0 5px 0;
+    }
+    .search {
+    	height: 28px;
+    	width: 477px;
+    	background-color: #fff;
+    	top: 7px;
+    	left: 15px;
+    	position: absolute;
+    	border-radius: 14px;
+    	line-height: 28px;
+    	color: rgba(0,0,0,.5);
+    	padding-left: 15px;
+    }
+    .door-l,
+    .door-r {
+    	width: 50%;
+    	height: 100%;
+    	background-color: skyblue;
+    	position: absolute;
+    	top: 0;
+    	transition: all 1s;
+    }
+    .door-l {
+    	left: 0;
+    	border-right: 1px solid #000;
+    	transform-origin: left;
+    }
+    .door-r {
+    	right: 0;
+    	border-left: 1px solid #000;
+    	transform-origin: right;
+    }
+    header:hover .door-l {
+    	transform: rotateY(-130deg);
+    }
+    header:hover .door-r {
+    	transform: rotateY(130deg);
+    }
+    .door-l::before {
+    	content: "欢迎来到";
+    	height: 20px;
+    	width: 80px;
+    	position: absolute;
+    	top: 50%;
+    	right: -3px;
+    	transform: translateY(-50%);
+    }
+    .door-r::before {
+    	content: "携程";
+    	height: 20px;
+    	width: 80px;
+    	position: absolute;
+    	top: 50%;
+    	left: 15px;
+    	transform: translateY(-50%);
+    }
+	</style>
+</head>
+<body>
+<header>
+     <img src="images/trip.jpg" alt="">
+     <div class="search">搜索：目的地/酒店/景点/航班号</div>
+     <div class="door-l"></div>
+     <div class="door-r"></div>
+</header>
+<nav>
+    <div class="row">
+        <div class="row1 hotel">酒店</div>
+        <div class="row1 homestay">民宿·客栈</div>
+        <div class="row1 onekey">机票+火车票+酒店</div>
+    </div>
+     <div class="row">
+        <div class="row1 air">机票</div>
+        <div class="row1 train">火车票</div>
+        <div class="row1 car">汽车票</div>
+    </div>
+     <div class="row">
+        <div class="row1 trip">旅游</div>
+        <div class="row1 highspeed">高铁游</div>
+        <div class="row1 ship">邮轮游</div>
+    </div>
+    
+</nav>
+	
+</body>
+</html>
